@@ -1,0 +1,48 @@
+{% extends "master.html" %}
+{% load static %}
+{% block content %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/perfil.css' %}">
+<nav>
+    <div class="per">
+    <h1>Perfil</h1>
+    <div>
+        <img src="" width="200px"/>
+    </div>
+    <div><h2>Usuario</h2></div>
+    <div><h4>Nota</h4><p>O jardineiro é Jesus e arveres somo nozes.</p></div>
+    <div><h5>Email:</h5><p>usuario@gmail.com</p></div>
+    <div><h5>Endereço:</h5><p>Espirito Santo, RN</p></div>
+    </div>
+    <div class="min">
+        <div class="a">
+            <h1>Suas Reservas:</h1>
+            <div class="div">
+            <div class="b">
+                <p class="b">Depilação</p>
+                <p class="b">Limpeza de Pele</p>
+                <p class="b">Massagem</p>
+            </div>
+            <div class="b">
+                <p class="b">Seg, 08:00</p>
+                <p class="b">Qui, 15:00</p>
+                <p class="b">Ter, 11:00</p>
+            </div></div>
+        </div>
+        <div class="a">
+            <h1>Seus Cursos:</h1>
+            <div class="div">
+                <div class="b">
+                    <p class="b">Cortes</p>
+                    <p class="b">Desing de Sobrancelhas</p>
+                    <p class="b">Automaquiagem</p>
+                </div>
+                <div class="b">
+                    <p class="b">26/01/2023, 09:00</p>
+                    p class="b">26/01/2023, 18:00</p>
+                    <p class="b">26/01/2023, 12:00</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</nav>
+{% endblock %}

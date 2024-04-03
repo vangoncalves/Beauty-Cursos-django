@@ -1,0 +1,45 @@
+{% extends "master.html" %}
+{% load static %}
+{% block content %}
+    <link type="text/css" rel="stylesheet" href="{% static '\css\cadastro.css' %}">
+    <nav>
+        <div class="form-image">
+            <img src="{% static 'img/online-page-animate.svg' %}">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastro</h1>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input-box">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" name="nome" id="nome" required/>
+                    </div>
+                    <div class="input-box">
+                        <label for="number">Telefone:</label>
+                        <input type="tel" name="number" id="number" placeholder="(xx) xxxx-xxxx" required/>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email" required/>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha:</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required/>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmpassword">Repetir Senha:</label>
+                        <input type="password" name="confirmpassword" required/>
+                    </div>
+                </div>
+                <div class="bot">
+                    <button><a href="">Cadastrar</a></button>
+                </div>
+            </form>
+            <p>Se você já possui uma conta clique <a href="">aqui</a></p>
+        </div>
+    </nav>
+{% endblock %}

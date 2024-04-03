@@ -1,0 +1,37 @@
+
+        nav 
+        {
+            grid-area: nav;
+            background-color: rgb(239, 236, 243);
+            padding: 100px;
+            flex-direction: column;
+            text-align: center;
+        }
+        main
+        {
+            grid-area: main;
+            background-color: rgb(239, 236, 243);
+            text-align: center;
+        }
+        .min 
+        {
+            display: flex;
+            text-align: center;
+        }
+        .div 
+        {
+            display: flex;
+            padding: 10px;
+        }
+        .max 
+        {
+            display: flex;
+        }
+        .b
+        {
+            padding: 20px;
+        }
+        .a 
+        {
+            padding: 100px;
+        }

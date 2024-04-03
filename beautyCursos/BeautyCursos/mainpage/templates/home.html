@@ -1,0 +1,27 @@
+{% extends "master.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <nav>
+    <img class="logo" src="{% static '\img\Beauty___Cursos-removebg-preview.png' %}">
+    <h3>Beauty cursos foi criado em 2022 com o intuito de focar na praticidade, beleza e bem estar dos clientes.<br>
+        Além de oferecermos os melhores serviços da região, estamos agora com cursos na área estética.    
+    </h3>
+    </nav>
+    <main>
+        <h1>Ultimas Reservas</h1><br>
+        <br>
+        <ul class="ser">
+            <li class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Maquiagem</h1></a></li>
+                <li class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Banho de Gel</h1></a></li>
+                <li class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Limpeza de Pele</h1></a></li>
+        </ul><br>
+        <br><h1>Ultimos cursos</h1><br>
+        <br>
+        <ul class="ser">
+            <li class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Design de unhas</h1></a><p>Seja um(a) profissional de Design de Unhas</p></li>
+            <li class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Automaquiagem</h1></a><p>Curso de Maquiagem para iniciantes!</p></li>
+            <li class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Design de Sobrancelhas</h1></a><p>Aprenda a fazer um Design perfeito!</p></li>
+        </ul><br>
+    </main>
+{% endblock %}

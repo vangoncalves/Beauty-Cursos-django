@@ -1,0 +1,71 @@
+{% extends "master.html" %}
+{% load static %}
+{% block content %}
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/reservas_cursos.css' %}">
+        <nav>
+            <div>
+                <div><h1>Filtros</h1></div>
+            </div>
+        </br>
+            <div>
+                <form action="destino.php" method="post"></form>
+                <p>
+                    <label for="nome">Palavra-chave:</label><br/>
+                    <input type="text" name="palavrachave" id="nome" required/>
+                </p>
+            </br>
+                <p>
+                    Área:<br/>
+                    <br/>
+                    <input type="checkbox" name="areas" id="op1" value="Opção 1"/>
+                <label for="op1">Cabelo</label><br/>
+
+                <input type="checkbox" name="areas" id="op2" value="Opção 2"/>
+                <label for="op2">Facial</label><br/>
+
+                <input type="checkbox" name="areas" id="op3" value="Opção 3"/>
+                <label for="op3">Maquiagem</label><br/>
+               
+                
+                    <input type="checkbox" name="areas" id="op1" value="Opção 1"/>
+                    <label for="op1">Estetíca</label><br/>
+    
+                    <input type="checkbox" name="areas" id="op2" value="Opção 2"/>
+                    <label for="op2">Depilação</label><br/>
+    
+                    <input type="checkbox" name="areas" id="op3" value="Opção 3"/>
+                    <label for="op3">Unha</label><br/>
+                </p>
+                <br/>
+                <p>
+                    <input type="submit" value="Filtrar"/>
+                </p>
+
+            </div>
+        </nav>
+        <main>
+            <h1>Reservas</h1>
+        <div class="ser">
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Maquiagem</h1></a></div>
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Banho de Gel</h1></a></div>
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Limpeza de Pele</h1></a></div>
+        </div>
+        <div class="ser">
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Depilação</h1></a></div>
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Lavagem + Escova</h1></a></div>
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Massagem</a></h1><p></div>
+        </div><br>
+        <br><h1>Cursos</h1>
+        <div class="ser">
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Desing de Unhas</h1></a><p>Seja um(a) profissional1</p></div>
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Automaquiagem</h1></a><p>Maquiagem para iniciantes!</p></div>
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Desing de Sobrancelhas</h1></a><p>Faça o Design perfeito!</p></div>
+        </div>
+        <div class="ser">
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Cortes</h1></a><p>Descrição do curso</p></div>
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Extensão de Cílios</h1></a><p>Descrição do curso</p></div>
+            <div class="box"><a href=""><img src="" width= "200px" height="200px"></a><a href=""><h1>Preenchimento Labial</h1></a><p>Descrição do curso</p></div>
+        </div>
+        </main>
+{% endblock %}
